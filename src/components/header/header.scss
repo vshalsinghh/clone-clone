@@ -1,0 +1,129 @@
+.header{
+    display:flex;
+    justify-content: center;
+    padding: 0px 12px;
+    border-bottom:  1px solid #ECEDEF;
+    .navbar{
+        width:100%;
+        display:flex;
+        max-width:1200px;
+    }
+}
+.hdr-logo{
+    display:inline-block;
+    margin:8px 68px 8px 0;
+    
+    .logo{
+        background-position: 0px 0px;
+        display:block;
+        width:173.5px;
+        height:42px;
+        text-indent: -9999px;
+        background-image: url('https://brilliant.org/site_media/version-V1b9b6b3f452/build/sprites-v2/global.png');
+    }
+}
+.hdr-nav{
+    flex-grow:1;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    .hdr-links{
+        padding:0px 20px;
+        display: flex;
+        flex-wrap:none;
+        .hdr-link{
+            display: inline-block;
+            margin-right: 48px;
+            line-height: 24px;
+            padding: 9px 0;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            font-size: 13px;
+            color: #5D7E8E;
+            cursor: pointer;
+
+        }
+        .hdr-link:hover{
+        color: #1F1F1F;
+        font-weight: bold;
+        padding-top: 8px;
+    }
+    }
+    
+    .hdr-btn{
+        display:none;
+        flex-grow:1;
+        justify-content: flex-end;
+        
+        .btn{
+            flex-grow: 1;
+            display: inline-block;
+            margin:14px 0px 13px 14px;
+            padding:3px 16px;
+            border-radius: 4px;
+            line-height: 1.6em;
+            font-size: 15px;
+            min-width: 50px;
+            max-width:176px;
+            text-align:center;
+            transition: box-shadow 100ms linear;
+            cursor: pointer;
+            
+        }
+        .btn:hover, .btn:focus, .btn:active{
+            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+
+        }
+        .login-btn{
+            color:  #039BE5;
+            background:#ffffff;
+            border: 1px solid #039BE5;
+        }
+        .signup-btn{
+            color:#ffffff;
+            background:#039BE5;
+        }
+    }
+}
+
+@media only screen and(min-width:700px) {
+    .hdr-nav{
+        .hdr-logo{
+        margin-right:32px;
+        }
+        .hdr-links{
+        padding:0px 1px;
+            .hdr-link{
+                margin-right:14px;
+            }
+        }
+
+        .hdr-btn{
+            display: flex;
+        }
+    }
+    
+    
+}
+@media only screen and(min-width:900px){
+    .header{
+        padding:0px 32px;
+    }
+    .hdr-nav{
+        .hdr-logo{
+        margin-right:68px;
+        }
+        .hdr-links{
+        padding:0px 20px;
+            .hdr-link{
+                margin-right:48px;
+            }
+        }
+    }
+}
+@media only screen and(min-width:1000px){
+    .header{
+        padding:0px 64px;
+    }
+}

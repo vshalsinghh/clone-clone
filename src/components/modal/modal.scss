@@ -1,0 +1,144 @@
+.modal{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(58, 58, 58, 0.96);
+    z-index: 700;
+    .modal-content{
+        display: flex;
+        width: 1020px;
+        height: 600px;
+        padding: 0;
+        border-radius: 0;
+        overflow: visible;
+        position: relative;background: #FFFFFF;
+        top: 0;
+        transition: top 200ms linear;
+        .login-left{
+            flex: none;
+            position: relative;
+            width: 510px;
+            height: 600px;
+            background: #000000;
+            .stars{
+                background-position: 0px -265px;
+                background-repeat: no-repeat;
+                overflow: hidden;
+                display: block;
+                text-indent: -9999px;
+                width: 475px;
+                height: 326px;
+                background-image: url('https://brilliant.org/site_media/version-Vd084bf071d2/build/sprites-v2/signup.png');
+                }
+                img{
+                    position: absolute;
+                    top: 140px;
+                    left: 149px;
+                    max-height: none;
+                    width: 212px;
+                }
+            }
+            .login-right{
+                position: relative;
+                width: 100%;
+                height: 100%;
+                overflow: visible;
+                .modal-header{
+                    background: transparent;
+                    color: #000000;
+                    font-size: 25px;
+                    margin: 120px auto 24px;
+                    text-align: center;
+                }
+                .buttons{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    padding: 36px 64px 24px;
+                    .btn{
+                        display: flex;
+                        align-items: center;
+                        border: 0;
+                        color: #FFFFFF;
+                        padding-left: 0;
+                        justify-content: center;
+                        font-size: 16px;
+                        border-radius: 6px;
+                        line-height: 32px;
+                        font-weight: normal;
+                        padding: 8px 0;
+                        min-width:200px;
+                        max-width:400px;
+                    }
+                    .logo{
+                        background-repeat: no-repeat;
+                            overflow: hidden;
+                            display: block;
+                            text-indent: -9999px;
+                            width: 24px;
+                            height: 24px;
+                            margin-right: 12px;
+                    }
+                    .facebook{
+                        background: #3b5998;
+                        color:#fff;
+                        
+                        .face-logo{
+                            background-image: url('https://brilliant.org/site_media/version-Vd084bf071d2/build/sprites-v2/signup.png');
+                            background-position: -802.5px -276px;
+                            
+                        }
+                        
+                        
+                    }
+                    .google{
+                        margin-top: 12px;
+                        background: transparent;
+                        color: #4C4C4C;
+                        border: 1px solid #C0C0C0;
+                        .google-logo{
+                            background-image: url('https://brilliant.org/site_media/version-Vd084bf071d2/build/sprites-v2/signup.png');
+                            background-position: -828.5px -276px;
+                        }
+                    }
+                    .apple{
+                        margin-top: 12px;
+                        background: black;
+                        color: white;
+                    }
+                    .email{
+                        margin-top: 12px;
+                        border: 1px solid #E6E6E6;
+                        background: #E6E6E6;
+                        color: #000000;
+                        margin-bottom: 0;
+                    }
+                }
+                .modal-footer{
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    text-align: center;
+                    color: #727272;
+                    background: transparent;
+                    font-size: 16px;
+                    padding: 24px 0 64px;
+                    a{
+                        margin-left:4px;
+                        color:#000000;
+                        text-decoration: underline;
+                    }
+                }
+                
+            }
+        }
+
+
+    }
+

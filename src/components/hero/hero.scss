@@ -1,0 +1,155 @@
+.hero-page{
+    background:#F8F8F8;
+    display:flex;
+    justify-content:center;
+}
+
+.container{
+    padding:94px 64px 64px 64px;
+    width:100%;
+    .hero-content{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items:center;
+        width:100%;
+        max-width:1200px;
+        .text{
+            flex:1;
+            display: inline-block;
+            max-width: 100%;
+            margin-bottom: 48px;
+            .back-btn{
+                display:block;
+                margin-top:-48px;
+                margin-bottom: 34px;
+                .back-arrow{
+                    background-image:url('https://brilliant.org/site_media/version-Vdfb883d0b42/build/sprites-v2/courses.png');
+                    background-position: -168px -66px;
+                    background-repeat: no-repeat;
+                    overflow: hidden;
+                    display: inline-block;
+                    text-indent: -9999px;
+                    width: 6px;
+                    height: 10px;
+                    margin-right:8px;
+                }
+                
+                a{
+                    font-size: 16px;
+                    line-height: 22px;
+                    color: #000;
+                    opacity:0.5;
+                    transition: all 100ms linear;
+                }
+                a:hover{
+                opacity:1;
+            }
+            }
+            h1{
+                margin-bottom: 16px;
+                text-align: left;
+                font-size: 60px;
+                line-height: 68px;
+                font-weight: 600;
+                color: #000000;
+            }
+            h2{
+                margin-bottom: 34px;
+                font-size: 24px;
+                font-weight: normal;
+                color: #000000;
+                opacity: 0.9;
+            }
+            p{
+                margin-bottom: 34px;
+                font-size: 18px;
+                line-height: 26px;
+                color: rgba(0, 0, 0, 0.5);
+            }
+            
+            .btn-link{
+                font-size: 16px;
+                color: #000000;
+                opacity: 0.5;
+                text-decoration: underline;
+                transition: opacity 100ms linear;
+            }
+            .btn-link:hover{
+                opacity:1;
+            }
+            .read-more-btn{    
+                    margin-left: 5px;
+                }
+        }
+
+    }
+
+}
+@media only screen and(min-width:800px){
+    .container{
+        .hero-content{
+            flex-direction: row;
+            text-align:left;
+            align-items: flex-start;
+            justify-content: space-between;
+            .text{
+                max-width:60%;
+                margin-right:48px;
+            }
+        }
+    }
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+    padding: 44px 32px;
+    border: 1px solid rgba(0, 0, 0, 0.14);
+    background: #FFFFFF;
+
+    .card-image{
+        display: block;
+        width:280px;
+        height: 244px;
+        margin-bottom: 44px;
+        .image{
+            background-image: url('https://ds055uzetaobb.cloudfront.net/brioche/chapter/logic-HzWHci.png?width=254') ;
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+    }
+    .stats{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 34px;
+        h3{
+            font-size:30px;
+            margin-top:0px;
+            margin-bottom: 0px;
+        }
+        p{
+            margin-bottom: 0px;
+        }
+    }
+    .btn{
+        background:#000;
+        color:#fff;
+        width:100%;
+        border:1px solid #000000;
+        line-height:42px;
+        font-size:18px;
+    }
+    .btn:hover{
+        background-color:#005FFA;
+        border:1px solid #005FFA;
+    }
+}
+

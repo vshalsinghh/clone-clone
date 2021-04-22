@@ -1,0 +1,59 @@
+.app{
+  width:100%;
+}
+h1, h2, h3, h4, h5{
+  margin:0;
+  color:#1F1F1F;
+}
+p{
+  font-size: 16px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.5);
+  margin:0;
+}
+a{
+  text-decoration:none;
+  color:#5D7E8E;
+}
+.btn-link{
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: none;
+  line-height: inherit;
+  font: inherit;
+  vertical-align: baseline;
+  color: #005FFA;
+  outline: none;
+  cursor: pointer;
+  transition: color 100ms linear;
+
+}
+.btn-link:hover {
+  color: #5D7E8E;
+}
+a .btn-link{
+  color: #005FFA;
+}
+a .btn-link:hover{
+  color: #5D7E8E;
+}
+.btn{
+  display: inline-block;
+  padding: 3px 16px;
+  margin-bottom: 0;
+  line-height: 1.6em;
+  color: #1F1F1F;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid #B6BEC7;
+  outline: none;
+  border-radius: 4px;
+  transition: box-shadow 100ms linear, color 100ms linear;
+  touch-action: manipulation;
+}   
+.btn:hover, .btn:focus, .btn:active{
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+
+}
